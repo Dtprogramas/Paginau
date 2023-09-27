@@ -1,0 +1,198 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenido principal (excluyendo el footer) */
+body {
+    display: flex;
+    flex-direction: column;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    
+    font-family: sans-serif;
+}
+
+.head{
+     display: flex;
+     align-items: center;  
+     justify-content: space-between;
+     height: 63px;
+     background-color: hwb(352 4% 33%);
+     position: fixed; 
+     width: 100%; 
+     z-index: 100%; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 9px;
+}
+
+.logo{
+    margin-left: 3px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 30px;
+}  
+
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background-color: rgb(94, 19, 19);
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+    padding: 0;
+}
+
+/* Estilos para cada producto */
+li {
+    border: 1px solid #ccc; /* Borde para cada producto */
+    margin: 5px; /* Márgenes entre productos */
+    padding: 5px; /* Espaciado interno para cada producto */
+}
+
+/* Estilos para el precio */
+p {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/* Texto en negrita para el precio */
+}
+
+li img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+.productos {
+    display: flex; /* Utiliza Flexbox para los elementos hijos */
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para cada producto */
+.producto {
+    border: 1px solid #cccccc3a;
+    margin: 10px;
+    padding: 0px;
+    flex: 1; /* Permite que los productos se expandan para ocupar el espacio disponible */
+}
+
+.producto img {
+    width: 200px;
+    height: 200px;
+}
+
+.valor{
+    color: rgb(94, 19, 19);
+}
+
+footer {
+    margin-top: auto; /* Empuja el footer hacia la parte inferior de la página */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 1900px;
+    height: auto;
+}
+
+/* Estilos para las secciones del footer */
+footer h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.contacto, .redes-sociales, .medios-de-pago, .suscripcion {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.redes-sociales a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+.contacto{
+    text-align: left;
+    margin-right: 20px;
+}
+
+.redes-sociales{
+    text-align: left;
+    margin-right: 5px;
+    text-overflow: clip;
+}
+
+.medios-de-pago{
+    text-align: right; 
+    position: relative;
+    top: -100px;
+    bottom: auto;
+    right: auto;    
+    left: 0;
+}
+
+.medios-de-pago img{
+    width: auto;
+    height: 50px;
+    padding: 0%;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between; /* Distribuye los formularios en dos columnas */
+    margin: 20px;
+    padding: 20px;
+}
+
+button{
+    background-color: transparent;
+    color: #a52610;
+    padding: 10px 20px;
+    border: 2px solid #aa311c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #b82d2d;
+    color: #fff;
+}
